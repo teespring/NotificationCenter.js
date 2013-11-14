@@ -68,8 +68,6 @@ $(document).ready(function() {
   });
 
   $('#move').click(function() {
-    Notifications.trigger('move');
-    log('event fired: move');
   });
 
   $('#show').click(function() {
@@ -130,7 +128,10 @@ $(document).ready(function() {
         $('#change').trigger('click');
         break;
       case 40:
-        $('#move').trigger('click');
+        Notifications.trigger('move');
+        Notifications.trigger('changeColor');
+        log('event fired: colorChanged');
+        log('event fired: move');
         break;
       default:
         return;
