@@ -1,17 +1,4 @@
-/*
- * Structure
- * {
- *   namespace: {
- *     event: Event,
- *     items: [
- *       [Object, Function],
- *       ...
- *     ]
- *   }
- * }
-*/
-
-var NotificationCenter = {
+TS.NotificationCenter = TS.NotificationCenter ||  {
 
   observers: {},
 
